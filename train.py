@@ -54,7 +54,7 @@ def main():
     VARIANT = ""      # "", "-BW", "-gray"
 
     train_loader, val_loader, _ = get_loaders(
-        DATA_ROOT, RES, VARIANT
+        DATA_ROOT, RES, VARIANT, limit_per_class=30
     )
 
     model = get_resnet()   # or SimpleCNN()

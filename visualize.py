@@ -2,7 +2,7 @@ import torch
 import matplotlib.pyplot as plt
 
 from data_utils import get_loaders
-from models import get_resnet
+from model import get_resnet
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
